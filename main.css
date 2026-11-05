@@ -1,0 +1,205 @@
+
+body {
+    font-family: monospace;
+    background: var(--allBg);
+    --fontColor: var(--black);
+}
+
+ul {
+    font-family: sans-serif;
+    
+}
+
+
+li {
+    list-style-position: none;
+    list-style-type: decimal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    left: -20px;
+}
+
+:root {
+    --black: #000000;
+    
+    --allBg: #99fa43;
+    --sideMenuBg: #6cc221;
+
+    /* --allBg: #DEE4E7; */
+    /* --sideMenuBg: #94a5af; */
+}
+
+.listElement {
+
+    /* positioning */
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    font-size: larger;
+    text-align: center;
+
+    /* borders */
+    border: 1px solid var(--sideMenuBg);
+    border-radius: 10px;
+
+    background-color: var(--allBg);
+    cursor: pointer;
+
+    /* tabs */
+
+}
+/* left sideMenu */
+.sideMenu {
+    height: 80%;
+    width: 20%;
+    position: fixed;
+    
+    top: 10%;
+    /* left: 10; */
+
+    z-index: 1;
+    text-align: center;
+    
+    /* overflow-x: hidden; */
+    background-color: var(--sideMenuBg);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+
+}
+
+/* right mainScreen */
+.mainScreen {
+    height: 90%;
+    width: 75%;
+    position: fixed;
+
+    top: 5%;
+    right: 2%;
+
+    z-index: 1;
+    /* overflow-x: hidden; */
+    border: 2px solid var(--black);
+    border-radius: 6px;
+
+}
+
+.mainW {
+    font-size: 20pt;
+    padding-left: 35%;
+}
+
+.mainElems {
+
+    font-size: 20pt;
+    margin: 5px;
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
+
+#namkaNadpis {
+    position: fixed;
+    
+    text-align:center;
+    right: 34%;
+    font-size: 25pt;
+
+}
+
+#namkaFotka {
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    left: 45%;
+    top: 20%;
+}
+
+#namkaTextik {
+    position: fixed;
+    bottom: 10%;
+    left: 32%;
+    right:12%;
+    font-size: 23pt;
+
+}
+
+#namkaCas {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    border: 4px solid var(--sideMenuBg); /* good border thiccness */
+    font-size: 20pt;
+    border-radius: 12px; /* bigger number == more circular border */
+    padding:10px; /* make the border wider */
+}
+#nazev {
+    top: 2%;
+    left: 50%;
+    font-size: medium;
+}
+.btnAdd {
+    font-size: larger;
+
+    left: -10;
+    margin: 5px;
+    border: 1px solid var(--sideMenuBg);
+    border-radius: 20px;
+
+    background-color: var(--allBg);
+
+    cursor: pointer;
+    text-align: center;
+    
+}
+
+.btnMain {
+    position:fixed;
+    font-size: 20pt;
+    
+    background-color: var(--sideMenuBg);
+    border: 1px solid var(--allBg);
+    border-radius: 20px;
+    cursor: pointer;
+
+    bottom:10%;
+
+    
+}
+
+.btnEdit{
+    right:20%;
+}
+
+.btnVarit{
+    right:5%;
+}
+
+
+.tabContent {
+    display: none;
+    border: 1px solid var(--black);
+    overflow: scroll;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 2;
+    height: 75%;
+    width: 25%;
+
+    top:12.5%;
+    left: 20%;
+    background-color: var(--sideMenuBg);
+    padding-left: 5px;
+
+}
+
+.closeTab {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--black);
+}
+* {
+    color: var(--fontColor);
+    font-family: sans-serif;
+}
